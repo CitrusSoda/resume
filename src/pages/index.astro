@@ -1,102 +1,161 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
 const highlightText = "text-[#ff7f50]";
 ---
 
 <Layout title="장준혁 | 프론트 엔지니어">
-	<div class="flex justify-between my-10 items-center md:items-start">
-		<div class="flex flex-col justify-end">
-			<h1 class="md:text-3xl text-xl font-bold">장준혁</h1>
-			<h2 class="md:text-lg text-xs">프론트<br class="block md:hidden" />엔지니어</h2>
-		</div>
-		<div class="flex flex-col">
-			<p class="md:text-lg text-xs">Email: <a href="mailto:dndhkaus1004@naver.com" class="font-medium">dndhkaus1004@naver.com</a></p>
-			<p class="md:text-lg text-xs">GitHub: <a href="https://github.com/CitrusSoda" target="_blank" rel="noopener noreferrer" class="font-medium">CitrusSoda</a></p>
-		</div>
-	</div>
-	<div class="flex flex-col xl:text-[60px] text-[40px] font-bold">
-		<h2>안녕하세요<span class={highlightText}>,</span></h2>
-		<h2>프론트 엔지니어 장준혁입니다<span class={highlightText}>.</span></h2>
-	</div>
-	<div class="my-14 xl:text-3xl md:text-xl text-lg flex flex-col gap-2">
-		<p><span class={`${highlightText} font-bold`}>소통과 협력</span>을 통해 팀의 시너지를 높이는 것을 즐기며,</p>
-		<p><span class={`${highlightText} font-bold`}>다양한 기술 스택</span>을 탐구하고 습득하기 위해 노력하고 있습니다.</p>
-		<p>사용자 경험 향상을 위해 끊임없이 고민하고, 새로운 도전을 통해 지속적으로 성장하고자 합니다.</p>
-	</div>
-	<div class="flex flex-col my-20">
-		<h2 class="xl:text-5xl md:text-3xl text-lg font-bold">Work Experience<span class={highlightText}>.</span></h2>
-		<div class="flex mt-10">
-			<div class="flex flex-col min-w-[100px] md:min-w-[300px]">
-				<h3 class="xl:text-2xl md:text-lg text-base font-medium">광주 인공지능 사관학교</h3>
-				<div class="flex flex-col mt-4">
-					<p>보조강사</p>
-					<p>2020.07 ~ 2020.11</p>
-				</div>
-			</div>
-			<div>
-				<ul>
-					<li class="flex items-center">
-					  <span class={`${highlightText} text-2xl mr-2`}>•</span>
-					  <span>NumPy 교육 자료 개발: 인공지능 학습을 위한 핵심 라이브러리 NumPy 자료 제작</span>
-					</li>
-					<li class="flex items-center">
-					  <span class={`${highlightText} text-2xl mr-2`}>•</span>
-					  <span>AI 기초 교육 멘토링: 머신러닝과 딥러닝의 기본 개념 및 실습 지도</span>
-					</li>
-					<li class="flex items-center">
-					  <span class={`${highlightText} text-2xl mr-2`}>•</span>
-					  <span>프로그래밍 멘토링: Python을 활용한 데이터 분석 및 전처리 멘토링</span>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="flex flex-col my-20">
-		<h2 class="xl:text-5xl md:text-3xl text-lg font-bold">Other Experiences<span class={highlightText}>.</span></h2>
-		<div class="flex flex-col my-10">
-			<h3 class="xl:text-2xl md:text-lg text-base font-medium">코드잇 스프린트: 프론트엔드 트랙 6기</h3>
-			<div class="flex flex-col mt-4">
-				<p>프론트엔드 트랙</p>
-				<p>2024.03 ~ 2024.09</p>
-			</div>
-			<div class="mt-6">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam aliquid explicabo. Illo temporibus saepe accusamus, consequuntur eius cumque laborum beatae quasi esse ex unde quis? Aspernatur iste laudantium nihil!</p>
-			</div>
-		</div>
-		<hr />
-		<div class="flex flex-col my-10">
-			<h3 class="xl:text-2xl md:text-lg text-base font-medium">스마일게이트 멤버십 11기</h3>
-			<div class="flex flex-col mt-4">
-				<p>사진 작가 연결 플랫폼 팀</p>
-				<p>2019.07 ~ 2019.12</p>
-			</div>
-			<div class="mt-6">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam aliquid explicabo. Illo temporibus saepe accusamus, consequuntur eius cumque laborum beatae quasi esse ex unde quis? Aspernatur iste laudantium nihil!</p>
-			</div>
-		</div>
-		<hr />
-		<div class="flex flex-col my-10">
-			<h3 class="xl:text-2xl md:text-lg text-base font-medium">멋쟁이 사자처럼</h3>
-			<div class="flex flex-col mt-4">
-				<p>2020 운영진</p>
-				<p>2019.03 ~ 2020.12</p>
-			</div>
-			<div class="mt-6">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam aliquid explicabo. Illo temporibus saepe accusamus, consequuntur eius cumque laborum beatae quasi esse ex unde quis? Aspernatur iste laudantium nihil!</p>
-			</div>
-		</div>
-		<hr />
-		<div class="flex flex-col my-10">
-			<h3 class="xl:text-2xl md:text-lg text-base font-medium">전북대학교</h3>
-			<div class="flex flex-col mt-4">
-				<p>기계시스템공학부, 소프트웨어공학과 복수전공</p>
-				<p>2016.03 ~ 2022.02</p>
-			</div>
-			<div class="mt-6">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam aliquid explicabo. Illo temporibus saepe accusamus, consequuntur eius cumque laborum beatae quasi esse ex unde quis? Aspernatur iste laudantium nihil!</p>
-			</div>
-		</div>
-		<hr />
-	</div>
+  <div class="flex justify-between my-10 items-center md:items-start">
+    <div class="flex flex-col justify-end">
+      <h1 class="md:text-3xl text-xl font-bold">장준혁</h1>
+      <h2 class="md:text-lg text-xs">
+        프론트<br class="block md:hidden" />엔지니어
+      </h2>
+    </div>
+    <div class="flex flex-col">
+      <p class="md:text-lg text-xs">
+        Email: <a href="mailto:dndhkaus1004@naver.com" class="font-medium"
+          >dndhkaus1004@naver.com</a>
+      </p>
+      <p class="md:text-lg text-xs">
+        GitHub: <a
+          href="https://github.com/CitrusSoda"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-medium">CitrusSoda</a>
+      </p>
+    </div>
+  </div>
+  <div class="flex flex-col xl:text-[60px] text-[40px] font-bold">
+    <h2>안녕하세요<span class={highlightText}>,</span></h2>
+    <h2>프론트 엔지니어 장준혁입니다<span class={highlightText}>.</span></h2>
+  </div>
+  <div class="my-14 xl:text-3xl md:text-xl text-lg flex flex-col gap-2">
+    <p>
+      <span class={`${highlightText} font-bold`}>소통과 협력</span>을 통해 팀의
+      시너지를 높이는 것을 즐기며,
+    </p>
+    <p>
+      <span class={`${highlightText} font-bold`}>다양한 기술 스택</span>을
+      탐구하고 습득하기 위해 노력하고 있습니다.
+    </p>
+    <p>
+      사용자 경험 향상을 위해 끊임없이 고민하고, 새로운 도전을 통해 지속적으로
+      성장하고자 합니다.
+    </p>
+  </div>
+  <div class="flex flex-col my-20">
+    <h2 class="xl:text-5xl md:text-3xl text-lg font-bold">
+      Work Experience<span class={highlightText}>.</span>
+    </h2>
+    <div class="flex mt-10">
+      <div class="flex flex-col min-w-[100px] md:min-w-[300px]">
+        <h3 class="xl:text-2xl md:text-lg text-base font-medium">
+          광주 인공지능 사관학교
+        </h3>
+        <div class="flex flex-col mt-4">
+          <p>보조강사</p>
+          <p>2020.07 ~ 2020.11</p>
+        </div>
+      </div>
+      <div>
+        <ul>
+          <li class="flex items-center">
+            <span class={`${highlightText} text-2xl mr-2`}>•</span>
+            <span
+              >NumPy 교육 자료 개발: 인공지능 학습을 위한 핵심 라이브러리 NumPy
+              자료 제작</span
+            >
+          </li>
+          <li class="flex items-center">
+            <span class={`${highlightText} text-2xl mr-2`}>•</span>
+            <span
+              >AI 기초 교육 멘토링: 머신러닝과 딥러닝의 기본 개념 및 실습 지도</span
+            >
+          </li>
+          <li class="flex items-center">
+            <span class={`${highlightText} text-2xl mr-2`}>•</span>
+            <span
+              >프로그래밍 멘토링: Python을 활용한 데이터 분석 및 전처리 멘토링</span
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col my-20">
+    <h2 class="xl:text-5xl md:text-3xl text-lg font-bold">
+      Other Experiences<span class={highlightText}>.</span>
+    </h2>
+    <div class="flex flex-col my-10">
+      <h3 class="xl:text-2xl md:text-lg text-base font-medium">
+        코드잇 스프린트: 프론트엔드 트랙 6기
+      </h3>
+      <div class="flex flex-col mt-4">
+        <p>프론트엔드 트랙</p>
+        <p>2024.03 ~ 2024.09</p>
+      </div>
+      <div class="mt-6">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam
+          aliquid explicabo. Illo temporibus saepe accusamus, consequuntur eius
+          cumque laborum beatae quasi esse ex unde quis? Aspernatur iste
+          laudantium nihil!
+        </p>
+      </div>
+    </div>
+    <hr />
+    <div class="flex flex-col my-10">
+      <h3 class="xl:text-2xl md:text-lg text-base font-medium">
+        스마일게이트 멤버십 11기
+      </h3>
+      <div class="flex flex-col mt-4">
+        <p>사진 작가 연결 플랫폼 팀</p>
+        <p>2019.07 ~ 2019.12</p>
+      </div>
+      <div class="mt-6">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam
+          aliquid explicabo. Illo temporibus saepe accusamus, consequuntur eius
+          cumque laborum beatae quasi esse ex unde quis? Aspernatur iste
+          laudantium nihil!
+        </p>
+      </div>
+    </div>
+    <hr />
+    <div class="flex flex-col my-10">
+      <h3 class="xl:text-2xl md:text-lg text-base font-medium">
+        멋쟁이 사자처럼
+      </h3>
+      <div class="flex flex-col mt-4">
+        <p>2020 운영진</p>
+        <p>2019.03 ~ 2020.12</p>
+      </div>
+      <div class="mt-6">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam
+          aliquid explicabo. Illo temporibus saepe accusamus, consequuntur eius
+          cumque laborum beatae quasi esse ex unde quis? Aspernatur iste
+          laudantium nihil!
+        </p>
+      </div>
+    </div>
+    <hr />
+    <div class="flex flex-col my-10">
+      <h3 class="xl:text-2xl md:text-lg text-base font-medium">전북대학교</h3>
+      <div class="flex flex-col mt-4">
+        <p>기계시스템공학부, 소프트웨어공학과 복수전공</p>
+        <p>2016.03 ~ 2022.02</p>
+      </div>
+      <div class="mt-6">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam
+          aliquid explicabo. Illo temporibus saepe accusamus, consequuntur eius
+          cumque laborum beatae quasi esse ex unde quis? Aspernatur iste
+          laudantium nihil!
+        </p>
+      </div>
+    </div>
+    <hr />
+  </div>
 </Layout>
