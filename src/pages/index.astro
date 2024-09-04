@@ -1,28 +1,31 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from '../layouts/Layout.astro';
 
-const highlightText = "text-[#ff7f50]";
+const highlightText = 'text-[#ff7f50]';
 ---
 
 <Layout title="장준혁 | 프론트 엔지니어">
   <div class="flex justify-between my-10 items-center md:items-start">
     <div class="flex flex-col justify-end">
       <h1 class="md:text-3xl text-xl font-bold">장준혁</h1>
-      <h2 class="md:text-lg text-xs">
+      <h2 class={`md:text-lg text-xs ${highlightText}`}>
         프론트<br class="block md:hidden" />엔지니어
       </h2>
     </div>
     <div class="flex flex-col">
       <p class="md:text-lg text-xs">
-        Email: <a href="mailto:dndhkaus1004@naver.com" class="font-medium"
-          >dndhkaus1004@naver.com</a>
+        Email: <a
+          href="mailto:dndhkaus1004@naver.com"
+          class={`font-medium ${highlightText}`}>dndhkaus1004@naver.com</a
+        >
       </p>
       <p class="md:text-lg text-xs">
         GitHub: <a
           href="https://github.com/CitrusSoda"
           target="_blank"
           rel="noopener noreferrer"
-          class="font-medium">CitrusSoda</a>
+          class={`font-medium ${highlightText}`}>CitrusSoda</a
+        >
       </p>
     </div>
   </div>
@@ -83,6 +86,7 @@ const highlightText = "text-[#ff7f50]";
       </div>
     </div>
   </div>
+  <hr />
   <div class="flex flex-col my-20">
     <h2 class="xl:text-5xl md:text-3xl text-lg font-bold">
       Other Experiences<span class={highlightText}>.</span>
@@ -155,6 +159,84 @@ const highlightText = "text-[#ff7f50]";
           laudantium nihil!
         </p>
       </div>
+    </div>
+    <hr />
+  </div>
+  <div class="flex flex-col my-20">
+    <h2 class="xl:text-5xl md:text-3xl text-lg font-bold">
+      Skills<span class={highlightText}>.</span>
+    </h2>
+    <div class="flex my-10">
+      <h3
+        class="xl:text-2xl md:text-lg text-base font-medium min-w-[100px] md:min-w-[300px]"
+      >
+        Frontend
+      </h3>
+      <div>
+        <ul>
+          <li class="flex items-center">
+            <span class={`${highlightText} text-2xl mr-2`}>•</span>
+            <span>JavaScript</span>
+          </li>
+          <li class="flex items-center">
+            <span class={`${highlightText} text-2xl mr-2`}>•</span>
+            <span>TypeScript</span>
+          </li>
+          <li class="flex items-center">
+            <span class={`${highlightText} text-2xl mr-2`}>•</span>
+            <span>React</span>
+          </li>
+          <li class="flex items-center">
+            <span class={`${highlightText} text-2xl mr-2`}>•</span>
+            <span>Next.js</span>
+          </li>
+          <li class="flex items-center">
+            <span class={`${highlightText} text-2xl mr-2`}>•</span>
+            <span>TailwindCSS</span>
+          </li>
+          <li class="flex items-center">
+            <span class={`${highlightText} text-2xl mr-2`}>•</span>
+            <span>Storybook</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex mb-10">
+      <h3
+        class="xl:text-2xl md:text-lg text-base font-medium min-w-[100px] md:min-w-[300px]"
+      >
+        Backend
+      </h3>
+      <div>
+        <ul>
+          <li class="flex items-center">
+            <span class={`${highlightText} text-2xl mr-2`}>•</span>
+            <span>FastAPI</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+  </div>
+  <div class="flex flex-col my-20">
+    <h2 class="xl:text-5xl md:text-3xl text-lg font-bold">
+      Certifications<span class={highlightText}>.</span>
+    </h2>
+    <div class="my-10">
+      <ul class="space-y-4">
+        <li class="flex items-center">
+          <span class={`${highlightText} text-2xl mr-2`}>•</span>
+          <h3 class="xl:text-2xl md:text-lg text-base font-medium">
+            정보처리기사 (2021.06.02 취득)
+          </h3>
+        </li>
+        <li class="flex items-center">
+          <span class={`${highlightText} text-2xl mr-2`}>•</span>
+          <h3 class="xl:text-2xl md:text-lg text-base font-medium">
+            빅데이터분석기사 (2021.12.31 취득)
+          </h3>
+        </li>
+      </ul>
     </div>
     <hr />
   </div>
