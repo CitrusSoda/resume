@@ -1,0 +1,8 @@
+---
+const { title } = Astro.props;
+const highlightText = "text-[#ff7f50]";
+---
+
+<h2 class="xl:text-5xl md:text-3xl text-lg font-bold">
+  {title}<span class={highlightText}>.</span>
+</h2>

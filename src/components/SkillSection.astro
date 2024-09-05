@@ -1,0 +1,24 @@
+---
+const { category, skills } = Astro.props;
+const highlightText = "text-[#ff7f50]";
+---
+
+<div class="flex my-10">
+  <h3
+    class="xl:text-2xl md:text-lg text-base font-medium min-w-[100px] md:min-w-[300px]"
+  >
+    {category}
+  </h3>
+  <div>
+    <ul>
+      {
+        skills.map((skill: string) => (
+          <li class="flex items-start">
+            <span class={`${highlightText} mr-2`}>•</span>
+            <span>{skill}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>
